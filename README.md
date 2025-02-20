@@ -4,9 +4,10 @@
 sudo apt-get update
 
 Abra o terminal e execute os seguintes comandos (cuide para responder S para as perguntas durante a instalação):
+
 ```sudo apt update
-sudo apt upgrade```
-```sudo apt install apt-transport-https ca-certificates curl software-properties-common```
+sudo apt upgrade
+sudo apt install apt-transport-https ca-certificates curl software-properties-common```
 ```curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -```
 ```sudo add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubuntu focal stable"```
 ```sudo apt update```
