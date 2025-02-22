@@ -24,3 +24,6 @@ sudo apt-get update
 
 ##Reinicie o computador para aplicar as alterações, e em seguida execute o docker.  
 ```sudo systemctl enable docker```
+
+##Instalando o Intellij
+```sudo snap install intellij-idea-community --classic```
