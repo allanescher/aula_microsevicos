@@ -1,7 +1,11 @@
-# aula_microsevicos
+# aula_microsevicos - Comandos para Ubuntu 
 
 ##Sempre atualizar o ubuntu
 sudo apt-get update
+
+##Instalar Git 
+```sudo apt update```
+```sudo apt install git```
 
 ##Abra o terminal e execute os seguintes comandos (cuide para responder S para as perguntas durante a instalação):
 
@@ -26,11 +30,11 @@ sudo apt-get update
 ##Reinicie o computador para aplicar as alterações, e em seguida execute o docker.  
 ```sudo systemctl enable docker```
 
-##Instalando o Intellij
+##Instalando o Intellij 
 ```sudo snap install intellij-idea-community --classic```
 
-##Comando Git para destivar SSL no push
+##Comando Git para destivar SSL no push 
 ```git -c http.sslVerify=false push origin main```
 
-##Comando Git para destivar SSL no clone
+##Comando Git para destivar SSL no clone 
 ```git -c http.sslVerify=false clone <http do projeto>```
