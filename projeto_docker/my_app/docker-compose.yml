@@ -1,0 +1,38 @@
+version: '3'
+
+services:
+  web:
+    container_name: app_py_aula
+    build: .
+    ports:
+      - "5000:5000"
+    depends_on:
+      - db
+    environment:
+      - DATABASE_URL=postgresql://postgres:postgres@db:5432/postgres
+    networks:
+      - mynetwork
+
+  db:
+    container_name: bd_aula
+    image: postgres:13
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+      POSTGRES_DB: postgres
+    ports:
+      - "5432:5432"
+    networks:
+      - mynetwork
+
+  adminer:
+    container_name: adminer_aula
+    image: adminer
+    ports:
+      - 8080:8080
+    networks:
+      - mynetwork
+
+networks:
+  mynetwork:
+    driver: bridge
