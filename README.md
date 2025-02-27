@@ -22,8 +22,15 @@ sudo apt-get update
 ```sudo groupadd docker```  
 ```sudo usermod -aG docker $USER```  
 
+
 ##Reinicie o computador para aplicar as alterações, e em seguida execute o docker.  
 ```sudo systemctl enable docker```
 
 ##Instalando o Intellij
 ```sudo snap install intellij-idea-community --classic```
+
+##Comando Git para destivar SSL no push
+```git -c http.sslVerify=false push origin main```
+
+##Comando Git para destivar SSL no clone
+```git -c http.sslVerify=false clone <http do projeto>```
